@@ -1,25 +1,27 @@
-//
-//  ViewController.swift
-//  FactFeed
-//
-//  Created by Gavin Aiken on 6/9/17.
-//  Copyright © 2017 Gavin Aiken. All rights reserved.
-//
-
 import UIKit
+import reddift
 
 class ViewController: UIViewController {
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+  override func viewDidAppear(_ animated: Bool) {
+    do {
+      try Session().getList(Paginator(), subreddit: nil, sort: .controversial, timeFilterWithin: .week) { (result) -> Void in
+        switch result {
+        case .failure(let error):
+          print(error)
+        case .success:
+          print("Success")
+        }
+      }
+    } catch {
+    }
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  @IBAction func didTapLogin(_ sender: UIButton) {
+    do {
+      try OAuth2Authorizer.sharedInstance.challengeWithAllScopes()
+    } catch {
+    }
   }
-
-
 }
 
