@@ -12,6 +12,7 @@
 		52ECB15A1EEB375300D660C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB1581EEB375300D660C0 /* Main.storyboard */; };
 		52ECB15C1EEB375300D660C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB15B1EEB375300D660C0 /* Assets.xcassets */; };
 		52ECB15F1EEB375300D660C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB15D1EEB375300D660C0 /* LaunchScreen.storyboard */; };
+		52ECB1671EEB469000D660C0 /* reddift_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB1661EEB469000D660C0 /* reddift_config.json */; };
 		B1FF5E96B717CF7AB9125B33 /* Pods_FactFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938139E58223E9DE875F12E /* Pods_FactFeed.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		52ECB15B1EEB375300D660C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52ECB15E1EEB375300D660C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52ECB1601EEB375300D660C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52ECB1661EEB469000D660C0 /* reddift_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reddift_config.json; sourceTree = "<group>"; };
 		CF011D6C608C0139894A98FC /* Pods-FactFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FactFeed/Pods-FactFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		F938139E58223E9DE875F12E /* Pods_FactFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				52ECB15B1EEB375300D660C0 /* Assets.xcassets */,
 				52ECB15D1EEB375300D660C0 /* LaunchScreen.storyboard */,
 				52ECB1601EEB375300D660C0 /* Info.plist */,
+				52ECB1661EEB469000D660C0 /* reddift_config.json */,
 			);
 			path = FactFeed;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				52ECB15F1EEB375300D660C0 /* LaunchScreen.storyboard in Resources */,
 				52ECB15C1EEB375300D660C0 /* Assets.xcassets in Resources */,
+				52ECB1671EEB469000D660C0 /* reddift_config.json in Resources */,
 				52ECB15A1EEB375300D660C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +385,7 @@
 				52ECB1651EEB375300D660C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
