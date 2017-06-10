@@ -1,33 +1,44 @@
 import UIKit
+import EZAlertController
 
 final class FactCollectionVC: UICollectionViewController {
   fileprivate let reuseIdentifier = "FactCell"
   fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
   fileprivate let itemsPerRow: CGFloat = 1
   
-  let factService = FactService()
-  var facts = [Fact]()
+  fileprivate let factService = FactService()
+  fileprivate var facts = [Fact]()
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
-    self.collectionView!.addInfiniteScrolling { 
-      self.loadMoreData()
+    self.collectionView!.addInfiniteScrolling { [weak self] in
+      self?.loadMoreData {
+        // Must be called for subsequent infinite scroll attempts to succeed.
+        self?.collectionView?.infiniteScrollingView.stopAnimating()
+      }
     }
     
-    loadMoreData()
+    self.collectionView!.triggerInfiniteScrolling()
   }
   
-  private func loadMoreData() {
+  private func loadMoreData(completion: @escaping () -> Void) {
     factService.fetchNextFacts { (result) in
-      if let facts = result.value {
-        self.facts += facts
-        print("Fetched \(facts.count) facts, \(self.facts.count) total")
-        
-        DispatchQueue.main.async(execute: { [weak self] () -> () in
-          self?.collectionView?.reloadData()
-        });
+      switch result {
+      case .failure(let error):
+        EZAlertController.alert("Failed", message: "Error : \(error)")
+      case .success:
+        if let facts = result.value {
+          self.facts += facts
+          print("Fetched \(facts.count) facts, \(self.facts.count) total")
+          DispatchQueue.main.async(execute: { [weak self] () -> () in
+            self?.collectionView?.reloadData()
+            completion()
+          });
+          return;
+        }
       }
+      completion()
     }
   }
 }
