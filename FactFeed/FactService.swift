@@ -10,18 +10,24 @@ struct Fact {
 }
 
 class FactService: NSObject {
-  let paginator = Paginator()
+  let subreddit = FFSubredditURLPath(path: "r/todayilearned")
+  var paginator: Paginator? = Paginator()
 
-  func fetchFacts(completion: @escaping (Result<[Fact]>) -> Void) {
+  func fetchNextFacts(completion: @escaping (Result<[Fact]>) -> Void) {
+    guard let paginator = paginator else {
+      completion(Result<[Fact]>(error: nil))
+      return
+    }
+
     do {
-      let subreddit = FFSubredditURLPath(path: "r/todayilearned")
       try Session().getList(paginator, subreddit:subreddit, sort: .top, timeFilterWithin: .all) { (result) -> Void in
         switch result {
         case .failure(let error):
           print(error)
         case .success:
-          if let children = result.value?.children {
-            let links = children.flatMap { $0 as? Link }
+          if let value = result.value {
+            self.paginator = FactService.getNextPaginator(paginator: value.paginator)
+            let links = value.children.flatMap { $0 as? Link }
             let facts = links.map({ (link) -> Fact in
               Fact(title: link.title)
             })
@@ -31,6 +37,23 @@ class FactService: NSObject {
       }
     } catch {
       completion(Result<[Fact]>(error: error as NSError))
+    }
+  }
+  
+  class func getNextPaginator(paginator: Paginator?) -> Paginator? {
+    if let prevPaginator = paginator {
+      let dict = prevPaginator.parameterDictionary
+      if let before = dict["before"] {
+        // Set the 'before' parameter
+        let nextPaginator = Paginator(after: "", before: before, modhash: "")
+        return nextPaginator
+      } else {
+        // The current page did not come 'before' another page we can fetch.
+        return nil;
+      }
+    } else {
+      // First fetch.
+      return Paginator()
     }
   }
 }
