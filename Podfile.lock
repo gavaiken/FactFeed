@@ -1,17 +1,20 @@
 PODS:
+  - EZAlertController (3.2)
   - reddift (2.0.1):
     - reddift/MiniKeychain (= 2.0.1)
   - reddift/MiniKeychain (2.0.1)
   - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
+  - EZAlertController
   - reddift
   - SVPullToRefresh
 
 SPEC CHECKSUMS:
+  EZAlertController: 633be01320bed47720be54054df47667d61c2481
   reddift: c6dc41a76657a9ca5c07f55a8e8ad6440f3635a9
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
-PODFILE CHECKSUM: 1ee027a94b4d012836031c293dacdb1262aa918a
+PODFILE CHECKSUM: 738bf781688b3ef97a8cae2c7fc8176f84cf3066
 
 COCOAPODS: 1.2.1
