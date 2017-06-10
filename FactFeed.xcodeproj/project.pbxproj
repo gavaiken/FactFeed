@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		52ECB1551EEB375300D660C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1541EEB375300D660C0 /* AppDelegate.swift */; };
-		52ECB1571EEB375300D660C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1561EEB375300D660C0 /* ViewController.swift */; };
 		52ECB15A1EEB375300D660C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB1581EEB375300D660C0 /* Main.storyboard */; };
 		52ECB15C1EEB375300D660C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB15B1EEB375300D660C0 /* Assets.xcassets */; };
 		52ECB15F1EEB375300D660C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB15D1EEB375300D660C0 /* LaunchScreen.storyboard */; };
 		52ECB1671EEB469000D660C0 /* reddift_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB1661EEB469000D660C0 /* reddift_config.json */; };
+		52ECB1691EEB5D2200D660C0 /* FactCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1681EEB5D2200D660C0 /* FactCollectionVC.swift */; };
+		52ECB16B1EEB5DF300D660C0 /* FactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB16A1EEB5DF300D660C0 /* FactService.swift */; };
+		52ECB16F1EEB71A200D660C0 /* FactCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB16E1EEB71A200D660C0 /* FactCVCell.swift */; };
+		52ECB1711EEB77C500D660C0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1701EEB77C500D660C0 /* GradientView.swift */; };
+		52ECB1731EEB7EB500D660C0 /* UIView+FactFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1721EEB7EB500D660C0 /* UIView+FactFeed.swift */; };
 		B1FF5E96B717CF7AB9125B33 /* Pods_FactFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938139E58223E9DE875F12E /* Pods_FactFeed.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +24,17 @@
 		47774B903935EC1BA0C957A7 /* Pods-FactFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-FactFeed/Pods-FactFeed.release.xcconfig"; sourceTree = "<group>"; };
 		52ECB1511EEB375300D660C0 /* FactFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52ECB1541EEB375300D660C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52ECB1561EEB375300D660C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52ECB1591EEB375300D660C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52ECB15B1EEB375300D660C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52ECB15E1EEB375300D660C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52ECB1601EEB375300D660C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ECB1661EEB469000D660C0 /* reddift_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reddift_config.json; sourceTree = "<group>"; };
+		52ECB1681EEB5D2200D660C0 /* FactCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCollectionVC.swift; sourceTree = "<group>"; };
+		52ECB16A1EEB5DF300D660C0 /* FactService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactService.swift; sourceTree = "<group>"; };
+		52ECB16E1EEB71A200D660C0 /* FactCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCVCell.swift; sourceTree = "<group>"; };
+		52ECB1701EEB77C500D660C0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		52ECB1721EEB7EB500D660C0 /* UIView+FactFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FactFeed.swift"; sourceTree = "<group>"; };
+		52ECB1741EEB88C100D660C0 /* FactFeed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FactFeed-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF011D6C608C0139894A98FC /* Pods-FactFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FactFeed/Pods-FactFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		F938139E58223E9DE875F12E /* Pods_FactFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,12 +81,17 @@
 			isa = PBXGroup;
 			children = (
 				52ECB1541EEB375300D660C0 /* AppDelegate.swift */,
-				52ECB1561EEB375300D660C0 /* ViewController.swift */,
 				52ECB1581EEB375300D660C0 /* Main.storyboard */,
 				52ECB15B1EEB375300D660C0 /* Assets.xcassets */,
 				52ECB15D1EEB375300D660C0 /* LaunchScreen.storyboard */,
 				52ECB1601EEB375300D660C0 /* Info.plist */,
 				52ECB1661EEB469000D660C0 /* reddift_config.json */,
+				52ECB1681EEB5D2200D660C0 /* FactCollectionVC.swift */,
+				52ECB16A1EEB5DF300D660C0 /* FactService.swift */,
+				52ECB16E1EEB71A200D660C0 /* FactCVCell.swift */,
+				52ECB1701EEB77C500D660C0 /* GradientView.swift */,
+				52ECB1721EEB7EB500D660C0 /* UIView+FactFeed.swift */,
+				52ECB1741EEB88C100D660C0 /* FactFeed-Bridging-Header.h */,
 			);
 			path = FactFeed;
 			sourceTree = "<group>";
@@ -127,6 +141,7 @@
 					52ECB1501EEB375300D660C0 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5N6WNUCL5S;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -216,8 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52ECB1571EEB375300D660C0 /* ViewController.swift in Sources */,
+				52ECB1691EEB5D2200D660C0 /* FactCollectionVC.swift in Sources */,
+				52ECB16F1EEB71A200D660C0 /* FactCVCell.swift in Sources */,
+				52ECB1731EEB7EB500D660C0 /* UIView+FactFeed.swift in Sources */,
+				52ECB1711EEB77C500D660C0 /* GradientView.swift in Sources */,
 				52ECB1551EEB375300D660C0 /* AppDelegate.swift in Sources */,
+				52ECB16B1EEB5DF300D660C0 /* FactService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +362,14 @@
 			baseConfigurationReference = CF011D6C608C0139894A98FC /* Pods-FactFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5N6WNUCL5S;
 				INFOPLIST_FILE = FactFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gav.FactFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FactFeed/FactFeed-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -357,11 +379,13 @@
 			baseConfigurationReference = 47774B903935EC1BA0C957A7 /* Pods-FactFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5N6WNUCL5S;
 				INFOPLIST_FILE = FactFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gav.FactFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FactFeed/FactFeed-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

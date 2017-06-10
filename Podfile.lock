@@ -2,13 +2,16 @@ PODS:
   - reddift (2.0.1):
     - reddift/MiniKeychain (= 2.0.1)
   - reddift/MiniKeychain (2.0.1)
+  - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
   - reddift
+  - SVPullToRefresh
 
 SPEC CHECKSUMS:
   reddift: c6dc41a76657a9ca5c07f55a8e8ad6440f3635a9
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
-PODFILE CHECKSUM: bff6481cef4ee95d8d2e29d773d02351ab7f3b41
+PODFILE CHECKSUM: 1ee027a94b4d012836031c293dacdb1262aa918a
 
 COCOAPODS: 1.2.1
