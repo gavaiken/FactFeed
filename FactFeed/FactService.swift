@@ -52,13 +52,12 @@ class FactService {
       return Paginator()
     }
 
-    guard let before = paginator.parameterDictionary["before"] else {
-      // The current page did not come 'before' another page we can fetch.
+    guard let after = paginator.parameterDictionary["after"] else {
+      // There is no page 'after' this one.
       return nil
     }
 
-    // Set the 'before' parameter to query the 'next' results.
-    let nextPaginator = Paginator(after: "", before: before, modhash: "")
+    let nextPaginator = Paginator(after: after, before: "", modhash: "")
     return nextPaginator
   }
 }
