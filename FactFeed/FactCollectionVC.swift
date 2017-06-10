@@ -19,7 +19,7 @@ final class FactCollectionVC: UICollectionViewController {
   }
   
   private func loadMoreData() {
-    factService.fetchFacts { (result) in
+    factService.fetchNextFacts { (result) in
       if let facts = result.value {
         self.facts += facts
         print("Fetched \(facts.count) facts, \(self.facts.count) total")
