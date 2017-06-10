@@ -23,7 +23,10 @@ final class FactCollectionVC: UICollectionViewController {
       if let facts = result.value {
         self.facts += facts
         print("Fetched \(facts.count) facts, \(self.facts.count) total")
-        self.collectionView?.reloadData()
+        
+        DispatchQueue.main.async(execute: { [weak self] () -> () in
+          self?.collectionView?.reloadData()
+        });
       }
     }
   }
