@@ -1,5 +1,19 @@
 PODS:
   - EZAlertController (3.2)
+  - Firebase/Core (4.0.2):
+    - FirebaseAnalytics (= 4.0.1)
+    - FirebaseCore (= 4.0.2)
+  - FirebaseAnalytics (4.0.1):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (4.0.2):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
   - reddift (2.0.1):
     - reddift/MiniKeychain (= 2.0.1)
   - reddift/MiniKeychain (2.0.1)
@@ -7,14 +21,20 @@ PODS:
 
 DEPENDENCIES:
   - EZAlertController
+  - Firebase/Core
   - reddift
   - SVPullToRefresh
 
 SPEC CHECKSUMS:
   EZAlertController: 633be01320bed47720be54054df47667d61c2481
+  Firebase: c7ad0731eab26d18a3fc547dd048b0f7cd9c63ae
+  FirebaseAnalytics: 4d7040fefc3cd8b291cde35f12cf063d7963f15d
+  FirebaseCore: 1a8bf6c795ad07d2918278657954ffd2552e9c17
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   reddift: c6dc41a76657a9ca5c07f55a8e8ad6440f3635a9
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
-PODFILE CHECKSUM: 738bf781688b3ef97a8cae2c7fc8176f84cf3066
+PODFILE CHECKSUM: 15ff760336fa0e0ae080294b75b8ef9af667cd11
 
 COCOAPODS: 1.2.1

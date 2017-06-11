@@ -17,6 +17,7 @@
 		52ECB16F1EEB71A200D660C0 /* FactCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB16E1EEB71A200D660C0 /* FactCVCell.swift */; };
 		52ECB1711EEB77C500D660C0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1701EEB77C500D660C0 /* GradientView.swift */; };
 		52ECB1731EEB7EB500D660C0 /* UIView+FactFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1721EEB7EB500D660C0 /* UIView+FactFeed.swift */; };
+		52ECB1781EECD1F800D660C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB1771EECD1F800D660C0 /* GoogleService-Info.plist */; };
 		B1FF5E96B717CF7AB9125B33 /* Pods_FactFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938139E58223E9DE875F12E /* Pods_FactFeed.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		52ECB1701EEB77C500D660C0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		52ECB1721EEB7EB500D660C0 /* UIView+FactFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FactFeed.swift"; sourceTree = "<group>"; };
 		52ECB1741EEB88C100D660C0 /* FactFeed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FactFeed-Bridging-Header.h"; sourceTree = "<group>"; };
+		52ECB1771EECD1F800D660C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF011D6C608C0139894A98FC /* Pods-FactFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FactFeed/Pods-FactFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		F938139E58223E9DE875F12E /* Pods_FactFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		52ECB1531EEB375300D660C0 /* FactFeed */ = {
 			isa = PBXGroup;
 			children = (
+				52ECB1771EECD1F800D660C0 /* GoogleService-Info.plist */,
 				52ECB1541EEB375300D660C0 /* AppDelegate.swift */,
 				52ECB1581EEB375300D660C0 /* Main.storyboard */,
 				52ECB15B1EEB375300D660C0 /* Assets.xcassets */,
@@ -171,6 +174,7 @@
 			files = (
 				52ECB15F1EEB375300D660C0 /* LaunchScreen.storyboard in Resources */,
 				52ECB15C1EEB375300D660C0 /* Assets.xcassets in Resources */,
+				52ECB1781EECD1F800D660C0 /* GoogleService-Info.plist in Resources */,
 				52ECB1671EEB469000D660C0 /* reddift_config.json in Resources */,
 				52ECB15A1EEB375300D660C0 /* Main.storyboard in Resources */,
 			);
