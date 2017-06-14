@@ -18,6 +18,7 @@
 		52ECB1711EEB77C500D660C0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1701EEB77C500D660C0 /* GradientView.swift */; };
 		52ECB1731EEB7EB500D660C0 /* UIView+FactFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1721EEB7EB500D660C0 /* UIView+FactFeed.swift */; };
 		52ECB1781EECD1F800D660C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52ECB1771EECD1F800D660C0 /* GoogleService-Info.plist */; };
+		52ECB17A1EECF84500D660C0 /* NLPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB1791EECF84400D660C0 /* NLPService.swift */; };
 		B1FF5E96B717CF7AB9125B33 /* Pods_FactFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938139E58223E9DE875F12E /* Pods_FactFeed.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		52ECB1721EEB7EB500D660C0 /* UIView+FactFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FactFeed.swift"; sourceTree = "<group>"; };
 		52ECB1741EEB88C100D660C0 /* FactFeed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FactFeed-Bridging-Header.h"; sourceTree = "<group>"; };
 		52ECB1771EECD1F800D660C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52ECB1791EECF84400D660C0 /* NLPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NLPService.swift; sourceTree = "<group>"; };
 		CF011D6C608C0139894A98FC /* Pods-FactFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FactFeed/Pods-FactFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		F938139E58223E9DE875F12E /* Pods_FactFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 				52ECB1701EEB77C500D660C0 /* GradientView.swift */,
 				52ECB1721EEB7EB500D660C0 /* UIView+FactFeed.swift */,
 				52ECB1741EEB88C100D660C0 /* FactFeed-Bridging-Header.h */,
+				52ECB1791EECF84400D660C0 /* NLPService.swift */,
 			);
 			path = FactFeed;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				52ECB16F1EEB71A200D660C0 /* FactCVCell.swift in Sources */,
 				52ECB1731EEB7EB500D660C0 /* UIView+FactFeed.swift in Sources */,
 				52ECB1711EEB77C500D660C0 /* GradientView.swift in Sources */,
+				52ECB17A1EECF84500D660C0 /* NLPService.swift in Sources */,
 				52ECB1551EEB375300D660C0 /* AppDelegate.swift in Sources */,
 				52ECB16B1EEB5DF300D660C0 /* FactService.swift in Sources */,
 			);

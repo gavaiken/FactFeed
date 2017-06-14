@@ -7,6 +7,7 @@ final class FactCollectionVC: UICollectionViewController {
   fileprivate let itemsPerRow: CGFloat = 1
   
   fileprivate let factService = FactService()
+  fileprivate let nlpService = NLPService()
   fileprivate var facts = [Fact]()
   
   override func viewWillAppear(_ animated: Bool) {
